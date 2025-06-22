@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Portfolio</title>
+</head>
+<body class="bg-black">
+    <section class="navbar">
+        <header class="text-white">
+            <nav class="flex justify-between p-4 text-xl">
+                <div>
+                    <ul class="md:flex space-x-4  hidden">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Experience</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:hidden mobico">
+                    <i class="fa-solid fa-bars "></i>
+                </div>
+            </nav>
+            <div class="p-4 md:hidden mobmenu">
+                <ul class="flex flex-col justify-center gap-5 text-xl ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </header>   
+
+    </section>
+    
+</body>
+
+<script>
+const mobico = document.querySelector('.mobico')
+const mobmenu = document.querySelector('.mobmenu')
+
+mobico.addEventListener('click',()=>{
+    mobmenu.classList.toggle('hidden')
+})
+</script>
+</html>
