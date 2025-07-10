@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <title>Portfolio</title>
-</head>
-<body class="bg-black">
+  </head>
+  <body class="">
     <section class="container">
-        <header class="text-white">
-            <nav class="flex justify-between item-center p-4  h-15  font-bold text-xl">
-                <div>
-                    <ul class="md:flex gap-x-20   hidden">
-                        <li class="hover:border-b-6 border-[#de7a00]"><a href="#">Home</a></li>
-                        <li class="hover:border-b-6 border-[#de7a00]"><a href="#">Experience</a></li>
-                        <li class="hover:border-b-6 border-[#de7a00]"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="md:hidden mobico">
-                    <i class="fa-solid fa-bars "></i>
-                </div>
-            </nav>
-            <div class="p-4 font-bold md:hidden mobmenu">
-                <ul class="flex flex-col justify-center gap-5 text-xl ">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </header>   
-
+      <header class="">
+        <nav
+          class="flex justify-between item-center p-4 h-15 font-bold text-xl"
+        >
+          <div>
+            <ul class="md:flex gap-x-20 hidden">
+              <li class="hover:border-b-6 border-blue-500">
+                <a href="#home">Home</a>
+              </li>
+              <li class="hover:border-b-6 border-blue-500">
+                <a href="#">Experience</a>
+              </li>
+              <li class="hover:border-b-6 border-blue-500">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:hidden mobico">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <div class="p-4 font-bold md:hidden mobmenu">
+          <ul class="flex flex-col justify-center gap-5 text-xl">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </header>
     </section>
+
+    <!--Home section -->
+    <section id="home" class="h-screen bg-[url(/src/bg1.avif)] flex justify-center">
+      <div class="flex flex-col justify-center space-y-6">
+        <h1 class="font-bold text-4xl">
+          Hi 👋, I'm <span class="border-b-8 border-blue-500">Jarvis</span>
+        </h1>
+        <p class="font-thin mt-1 text-xl">
+          Welcome to my portfolio. Explore my latest projects and creative
+          journey.
+        </p>
+        <button
+          class="w-1/2 bg-blue-500 font-semibold text-white p-3 rounded-lg hover:bg-white hover:text-blue-500 border-blue-500"
+        >
+          Download Resume
+        </button>
+      </div>
+    </section>
+
+
     
-</body>
+  </body>
 
-<script>
-const mobico = document.querySelector('.mobico')
-const mobmenu = document.querySelector('.mobmenu')
+  <script>
+    const mobico = document.querySelector(".mobico");
+    const mobmenu = document.querySelector(".mobmenu");
 
-mobico.addEventListener('click',()=>{
-    mobmenu.classList.toggle('hidden')
-})
-</script>
+    mobico.addEventListener("click", () => {
+      mobmenu.classList.toggle("hidden");
+    });
+  </script>
 </html>

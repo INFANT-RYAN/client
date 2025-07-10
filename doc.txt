@@ -1,0 +1,21 @@
+🌱 1. Beginner Project – Responsive Portfolio Website
+Goal: Learn layout, responsiveness, and basic interactivity.
+
+🔧 Features:
+Home, About, Projects, Contact sections
+
+Responsive navbar with a hamburger menu (for mobile)
+
+Smooth scrolling and scroll-to-top button
+
+Simple animations using Tailwind’s transition, hover, and transform utilities
+
+💡 Skills You'll Learn:
+HTML structure and semantics
+
+Tailwind utility classes
+
+Basic JavaScript (menu toggle, scroll behavior)
+
+✅ Bonus:
+Host it on GitHub Pages or Vercel for portfolio use.
